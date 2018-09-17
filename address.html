@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-  <div class="address">
+  <div class="address" id="app">
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         <symbol id="icon-add" viewBox="0 0 32 32">
@@ -63,11 +63,11 @@
         <div class="addr-list-wrap">
           <div class="addr-list">
             <ul>
-              <li>
+              <li v-for="item in addressDataList">
                 <dl>
-                  <dt>JackBean</dt>
-                  <dd class="address">北京朝阳区朝阳公园</dd>
-                  <dd class="tel">13356576785</dd>
+                  <dt>{{item.userName}}</dt>
+                  <dd class="address">{{item.address}}</dd>
+                  <dd class="tel">{{item.tel}}</dd>
                 </dl>
                 <div class="addr-opration addr-edit">
                   <a href="javascript:;" class="addr-edit-btn">

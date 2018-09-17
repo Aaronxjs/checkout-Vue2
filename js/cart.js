@@ -74,7 +74,7 @@ var vm = new Vue({
 			this.showAlert(true);
 		},
 		delProductAfter: function(){
-			this.$delete(this.productList, this.curProduct);
+			this.$delete(this.productList, this.curProductIndex);
 			this.showAlert(false);
 		}
 	}
