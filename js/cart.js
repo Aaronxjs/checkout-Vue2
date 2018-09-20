@@ -79,3 +79,4 @@ var vm = new Vue({
 		}
 	}
 });
+
